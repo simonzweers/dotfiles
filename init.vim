@@ -22,4 +22,4 @@ require('nvim-tree').setup()
 EOF
 
 autocmd VimEnter * NvimTreeToggle .
-colorscheme onedark
+" colorscheme onedark
