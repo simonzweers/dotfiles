@@ -11,15 +11,15 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'navarasu/onedark.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ms-jpq/coq_nvim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
 lua << EOF
 require('lualine').setup()
-require('nvim-tree').setup()
 
 EOF
 
-autocmd VimEnter * NvimTreeToggle .
+autocmd VimEnter * NERDTree | wincmd p
 " colorscheme onedark
